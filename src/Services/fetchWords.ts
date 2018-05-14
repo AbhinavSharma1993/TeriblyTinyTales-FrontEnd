@@ -10,6 +10,7 @@ export class FetchWords {
 
         console.log('service' + res + 'service' + res._body);
         resolve(res._body);
+        resolve('a');
 
       }, ( err ) => {
         reject(err);
