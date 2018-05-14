@@ -7,10 +7,7 @@ export class FetchWords {
   getWords(number) {
     return new Promise((resolve, reject) => {
       this.http.get(' https://thawing-bayou-82277.herokuapp.com/wordlist/' + number ).subscribe(function (res) {
-
-        console.log('service' + res + 'service' + res._body);
-        resolve(res._body);
-        resolve('a');
+        resolve(res);
 
       }, ( err ) => {
         reject(err);

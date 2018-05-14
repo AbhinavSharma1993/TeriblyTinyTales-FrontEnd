@@ -16,8 +16,8 @@ export class WordlistComponent implements OnInit {
 
   onSubmit ( Form: NgForm ) {
     this.fetchwords.getWords(Form.value.number).then((res) => {
-      this.data = JSON.parse(res);
-      this.data = this.data.data;
+       this.data = JSON.parse(res['_body']);
+       this.data = this.data.data;
       this.isDataAvailable = true;
     }).catch((err) => {
       console.log(err);

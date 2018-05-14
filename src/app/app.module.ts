@@ -9,11 +9,11 @@ import { HeaderComponent } from './header/header.component';
 import { WordlistComponent } from './wordlist/wordlist.component';
 import {FormsModule} from '@angular/forms';
 import {FetchWords} from '../Services/fetchWords';
-import {Routes,RouterModule} from '@angular/router';
+// import {Routes,RouterModule} from '@angular/router';
 
-const appRoutes: Routes = [
-  {path: '/' , component: AppComponent}
-  ];
+// const appRoutes: Routes = [
+//   {path: '/' , component: AppComponent}
+//   ];
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +23,8 @@ const appRoutes: Routes = [
   imports: [
     FormsModule,
     BrowserModule,
-    HttpModule,
-    RouterModule.forRoot(appRoutes)
+    HttpModule
+    // RouterModule.forRoot(appRoutes)
   ],
   providers: [FetchWords],
   bootstrap: [AppComponent]
