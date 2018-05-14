@@ -2,26 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
-## Development server
+## Steps to run locally
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+download the code run npm install and run ng serve in the project directory.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Code
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+1.This app has been developed in angular 5
+2.When you hit submit button on UI the number you entered is passed to a API which return the frequency of words in a file hosted at http://terriblytinytales.com/test.txt.
+3.The call are made from the angular service file fetchWords.ts and the response is returned to wordlist component which is rendered on app component.
+4.No third party modules are used.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
